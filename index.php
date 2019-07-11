@@ -3,11 +3,10 @@
 include_once "core.php";
 // set page title
 $page_title = "List of articles";
- 
-// include login checker
-$require_login=true;
-include_once "login_check.php";
 
+// include login checker
+$require_login = true;
+include_once "login_check.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +32,22 @@ include_once "login_check.php";
         include_once 'navigation.php';
         ?>
         <main>
-            <h1>List of articles</h1>
+            <div class="container">
+                <div class="article-wrapper">
+                    <div class="wrapper-head clearfix">
+                        <h1 class="pull-left">Articles list</h1>
+                        <select onchange="getArticles()" class="pull-right" id="filter">
+                            <option selected value="all">All articles</option>
+                        </select>
+                    </div>
+                    <div class="article-box row">
+                        
+                    </div>
+
+
+
+                </div>
+            </div>
 
         </main>
 
@@ -44,6 +58,8 @@ include_once "login_check.php";
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/listArticles.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jquery.simplePagination.js"></script>
         <!-- end HTML page -->
     </body>
 </html>

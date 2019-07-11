@@ -42,7 +42,7 @@ body {
     background: #d4af7a;
     text-transform: uppercase;
 }
-.username-err-msg, .password-err-msg{
+.err_info{
     color: red;
     font-size: 12px;
 }

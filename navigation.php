@@ -22,7 +22,7 @@
                         <a href="<?php echo $home_url; ?>">List rticles</a>
                     </li>
                     <li <?php echo $page_title == "New article" ? "class='active'" : ""; ?>>
-                        <a href="<?php echo $home_url.'/new_article'; ?>">New article</a>
+                        <a href="<?php echo $home_url.'new_article/new_article.php'; ?>">New article</a>
                     </li>
                 </ul>
 

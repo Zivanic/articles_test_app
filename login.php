@@ -56,8 +56,8 @@ try {
         $message = 'incorrect username';
         die(json_encode($message));
     }
-} catch (PDOException $e) {
+} catch (PDOException $err) {
 
-    die(json_encode($e->getMessage()));
+    die(json_encode($err->getMessage()));
 }
 ?>

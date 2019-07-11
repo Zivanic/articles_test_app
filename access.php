@@ -42,11 +42,11 @@ $access_denied = false;
 
                                 <div class="col-sm-6 col-sm-offset-3">     
                                     <input required type="text" class="form-control" id="username" placeholder="USERNAME" name="username">
-                                    <p class="username-err-msg"></p>
+                                    <p class="username-err-msg err_info"></p>
                                 </div>
                                 <div class="col-sm-6 col-sm-offset-3">          
                                     <input required type="password" class="form-control" id="password" placeholder="PASSWORD" name="password">
-                                    <p class="password-err-msg"></p>
+                                    <p class="password-err-msg err_info"></p>
                                 </div>
                                 <div class="col-sm-6 col-sm-offset-3">   
                                     <button type="submit" id="submitButton" class="btn btn-defaul">Sign in</button>
