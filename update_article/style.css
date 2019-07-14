@@ -1,0 +1,21 @@
+.article-holder{
+    margin: 35px 0;
+}
+.article-update{
+    display: block;
+    background: #f8f8f8;
+    padding: 7px;
+    border-radius: 3px;
+    margin: 8px 0;
+}
+button{
+    margin-right: 7px;
+}
+#editTitle{
+    border-radius: 3px;
+    padding: 3px;
+    background: #f8f8f8;
+    color: #333333;
+    display: block;
+    width: 100%;
+}
