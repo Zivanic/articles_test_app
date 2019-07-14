@@ -23,6 +23,7 @@ include_once "login_check.php";
         <!-- Bootstrap CSS -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen" />
         <!-- admin custom CSS -->
+        <link href="<?php echo $home_url . "css/simplePagination.css" ?>" rel="stylesheet" />
         <link href="<?php echo $home_url . "css/style.css" ?>" rel="stylesheet" />
 
     </head>
@@ -40,12 +41,12 @@ include_once "login_check.php";
                             <option selected value="all">All articles</option>
                         </select>
                     </div>
-                    <div class="article-box row">
+                    <div class="article-box">
                         
                     </div>
 
 
-
+                    <div class="text-center" id="pagination"></div>
                 </div>
             </div>
 
@@ -59,7 +60,7 @@ include_once "login_check.php";
 
         <script src="js/main.js" type="text/javascript"></script>
         <script src="js/listArticles.js" type="text/javascript"></script>
-        <script type="text/javascript" src="js/jquery.simplePagination.js"></script>
+        <script src="js/simplePagination.js" type="text/javascript"></script>
         <!-- end HTML page -->
     </body>
 </html>

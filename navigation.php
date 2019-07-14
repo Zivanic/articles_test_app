@@ -1,6 +1,6 @@
 <header>
     <!-- navbar -->
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="navbar navbar-default navbar-fixed-top " role="navigation">
         <div class="container">
 
             <div class="navbar-header">
@@ -17,20 +17,27 @@
             </div>
 
             <div class="navbar-collapse navbar-right collapse">
-                <ul class="nav navbar-nav">
-                    <li <?php echo $page_title == "List of articles" ? "class='active'" : ""; ?>>
-                        <a href="<?php echo $home_url; ?>">List rticles</a>
-                    </li>
-                    <li <?php echo $page_title == "New article" ? "class='active'" : ""; ?>>
-                        <a href="<?php echo $home_url.'new_article/new_article.php'; ?>">New article</a>
-                    </li>
-                </ul>
 
                 <?php
                 // check if users / customer was logged in
                 // if user was logged in, show "Logout" option
                 if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
                     ?>
+
+                    <ul class="nav navbar-nav">
+                        <li <?php echo $page_title == "List of articles" ? "class='active'" : ""; ?>>
+                            <a href="<?php echo $home_url; ?>">List articles</a>
+                        </li>
+                        <li <?php echo $page_title == "New article" ? "class='active'" : ""; ?>>
+                            <a href="<?php echo $home_url . 'new_article/new_article.php'; ?>">New article</a>
+                        </li>
+                        <li <?php echo $page_title == "Update article" ? "class='active'" : ""; ?>>
+                            <a href="<?php echo $home_url . 'update_article/update_article.php'; ?>">Update article</a>
+                        </li>
+                        <li <?php echo $page_title == "Article preview" ? "class='active'" : ""; ?>>
+                            <a href="<?php echo $home_url . 'article_preview/article_preview.php'; ?>">Article preview</a>
+                        </li>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="<?php echo $home_url; ?>logout.php">Logout</a></li>
                     </ul>
@@ -41,7 +48,7 @@
                     ?>
                     <ul class="nav navbar-nav navbar-right">
                         <li <?php echo $page_title == "Login" ? "class='active'" : ""; ?>>
-                            <a href="<?php echo $home_url; ?>login">
+                            <a >
                                 <span class="glyphicon glyphicon-log-in"></span> Log In
                             </a>
                         </li>
