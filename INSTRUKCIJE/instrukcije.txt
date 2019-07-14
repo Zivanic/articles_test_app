@@ -1,0 +1,11 @@
+Instrukcije:
+
+-Skinuti projekat i raspakovati ga
+-Pokrenuti web aplikaciju iz lokala uz pomoc wampa
+-U phpmyadminu kreirati database "article_test"
+-Importovati tabele "users" i "articles" koje se nalaze u folderu mySQL_tables
+-Ako je potrebno u fajlu db_info koji se nalazi u root folderu projekta uneti svoje podatke za konekciju sa bazom(trenutni podaci su username:"root" password:"")
+-U bazi su kreirana tri user sa kojima se mozete ulogovati u app 
+	-username: testadmin password:testadmin
+	-username: testpera password:testadmin
+	-username: testuser password:testadmin
