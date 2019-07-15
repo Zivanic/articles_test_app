@@ -3,7 +3,7 @@
  if(isset($require_login) && $require_login==true){
     // if user not yet logged in, redirect to login page
     if(!isset($_SESSION['logged_in']) && $_SESSION['logged_in']!==true){
-        header("Location: {$home_url}login.php?action=please_login");
+        header("Location: {$home_url}access.php?action=please_login");
     }
 }
  
